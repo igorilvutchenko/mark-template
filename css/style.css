@@ -1,0 +1,215 @@
+@font-face {
+  font-family: 'aileronregular';
+  src: url("../fonts/aileron-regular-webfont.woff2") format("woff2"), url("../fonts/aileron-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'aileronbold';
+  src: url("../fonts/aileron-bold-webfont.woff2") format("woff2"), url("../fonts/aileron-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'caladeabold';
+  src: url("../fonts/caladea-bold-webfont.woff2") format("woff2"), url("../fonts/caladea-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  width: 100%;
+  font-size: 18px; }
+
+.section {
+  width: 100%;
+  font-size: 0px; }
+
+.red {
+  color: #d63c37; }
+
+.white {
+  color: #fff; }
+
+.hero {
+  height: 100vh;
+  background-color: #fff;
+  background-image: url(../img/herobg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+
+.container {
+  width: 75%;
+  margin: auto;
+  font-size: 0;
+  text-align: center;
+  padding-top: 10%; }
+
+.title {
+  font-family: 'caladeabold';
+  font-size: 36px;
+  color: #666666; }
+  .title--gray {
+    color: #333333;
+    text-align: right;
+    margin-bottom: 100px; }
+
+.underline {
+  text-decoration: underline; }
+
+.subtitle {
+  margin-top: 40px;
+  font-family: 'aileronregular';
+  font-size: 18px;
+  color: #666666;
+  line-height: 1.5; }
+
+.social {
+  position: fixed;
+  top: 3em;
+  right: 2em;
+  width: 30px;
+  display: block;
+  transition: opacity 0.2s linear;
+  font-size: 18px; }
+
+.sandvich {
+  background: transparent url(../img/sandvich.svg);
+  width: 30px;
+  height: 35px;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+  outline: none;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0); }
+  .sandvich:hover, .sandvich:active {
+    background-size: 85%; }
+
+.sub-menu {
+  height: 0;
+  width: 35px;
+  right: 0;
+  top: 40px;
+  position: absolute;
+  font-size: 18px;
+  z-index: 100;
+  overflow: hidden;
+  opacity: 0;
+  list-style: none;
+  text-align: right;
+  display: inline-block;
+  margin: 0;
+  padding: 0; }
+  .sub-menu li {
+    display: block;
+    float: left;
+    clear: both;
+    height: auto; }
+    .sub-menu li a {
+      color: #333333;
+      width: 100%;
+      display: block;
+      line-height: 40px; }
+      .sub-menu li a:hover,
+      .sub-menu li a :active {
+        color: #666666; }
+
+.oppenned .sub-menu {
+  opacity: 1;
+  height: 200px;
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -ms-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out; }
+
+.introducing {
+  background-color: #f6f6f6; }
+
+.content {
+  margin-top: 50px;
+  font-size: 0; }
+
+.image,
+.list {
+  display: inline-block;
+  vertical-align: top; }
+
+.image {
+  width: 50%; }
+
+.list {
+  width: 50%;
+  padding-left: 4.5%;
+  font-size: 18px; }
+  .list--left {
+    padding: 0; }
+  .list--wide {
+    padding: 0;
+    padding-left: 30px; }
+
+.main-text {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 18px;
+  display: inline-block; }
+  .main-text--right {
+    text-align: right;
+    color: #333333; }
+
+.main-text:not(:first-of-type) {
+  margin-top: 60px; }
+
+.symbol {
+  margin-right: 2%;
+  display: inline-block;
+  width: 45px;
+  vertical-align: top;
+  text-align: center; }
+  .symbol--round {
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    margin: 0 0 0 30px;
+    text-align: center; }
+    .symbol--round .fa {
+      line-height: 41px; }
+
+.item {
+  display: inline-block;
+  width: calc(100% - 90px);
+  font-family: 'aileronregular'; }
+  .item__title {
+    font-size: 1.2em;
+    line-height: 1em;
+    margin-bottom: 20px; }
+    .item__title--white {
+      color: #fff; }
+    .item__title--red {
+      color: #d63c37; }
+
+.bold {
+  font-family: 'aileronbold'; }
+
+.footer {
+  background-color: #d63c37;
+  padding-bottom: 5%; }
